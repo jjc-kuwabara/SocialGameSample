@@ -46,10 +46,17 @@ public class UserDataManager : SingletonMonoBehaviour<UserDataManager>
 
     public void CallGachaPointSub1(int userId)
     {
-        string url = "http://35.79.36.5/PHPFolder/Jugyo/SubPoint.php?userId=" + userId;
+        string url = "http://35.79.36.5/PHPFolder/Jugyo/SubPoint_Gacha1.php?userId=" + userId;
 
         StartCoroutine(UrlAccess(url, ()=>CallUserData_LobbySystem(userId)));
-    }    
+    }
+
+    public void CallGachaPointSub10(int userId)
+    {
+        string url = "http://35.79.36.5/PHPFolder/Jugyo/SubPoint_Gacha10.php?userId=" + userId;
+
+        StartCoroutine(UrlAccess(url, ()=>CallUserData_LobbySystem(userId)));
+    }
 
     // ユーザデータを取得してきて、メンバ変数に格納する.
     IEnumerator GetUserData(string url, UnityAction callbackFunc = null)

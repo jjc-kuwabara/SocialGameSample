@@ -7,7 +7,7 @@ public class LobbyGachaPointRenderer : MonoBehaviour
 {
     void Awake()
     {
-        m_gachaPointText = this.transform.Find("VLayout/PointNumText").GetComponent<Text>();
+        m_gachaPointText = this.transform.Find("HLayout/PointNumText").GetComponent<Text>();
     }
 
     // Update is called once per frame

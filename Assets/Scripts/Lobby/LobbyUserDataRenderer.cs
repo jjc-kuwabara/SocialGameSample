@@ -7,7 +7,7 @@ public class LobbyUserDataRenderer : MonoBehaviour
 {
     void Awake()
     {
-        m_userNameText = this.transform.Find("VLayout/NameText").GetComponent<Text>();
+        m_userNameText = this.transform.Find("HLayout/NameText").GetComponent<Text>();
     }
 
     // Update is called once per frame

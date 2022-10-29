@@ -19,4 +19,11 @@ public class GachaButtonPanel : MonoBehaviour
         int currentUserId = int.Parse(userDataManager.GetCurrentUserId());
         userDataManager.CallGachaPointSub1(currentUserId);
     }
+
+    public void OnClickGachaPointSub10Button()
+    {
+        UserDataManager userDataManager = GameObject.Find("UserDataManager").GetComponent<UserDataManager>();
+        int currentUserId = int.Parse(userDataManager.GetCurrentUserId());
+        userDataManager.CallGachaPointSub10(currentUserId);
+    }    
 }

@@ -562,7 +562,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1148232107}
           m_TargetAssemblyTypeName: GachaButtonPanel, Assembly-CSharp
-          m_MethodName: OnClickGachaPointSub1Button
+          m_MethodName: OnClickGachaPointSub10Button
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
