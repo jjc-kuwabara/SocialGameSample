@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UserIdInputPanel : MonoBehaviour
+public class SystemUserIdInputPanel : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -31,7 +31,7 @@ public class UserIdInputPanel : MonoBehaviour
     public void OnClickRefreshButton()
     {
         UserDataManager userDataManager = GameObject.Find("UserDataManager").GetComponent<UserDataManager>();
-        userDataManager.CallUserData(m_currentId);
+        userDataManager.CallUserData_LobbySystem(m_currentId);
     }
 
     // ID表示部分の更新.
