@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lobby_System.unity
     guid: 6b6115efffa44ce4ca4917d3a3d984f5
+  - enabled: 1
+    path: Assets/Scenes/Lobby_Party.unity
+    guid: 23763340ce67c1141b843c4750125589
+  - enabled: 1
+    path: Assets/Scenes/Lobby_Battle.unity
+    guid: c25d17e5efff12a47aa4e6d11a3c19fa
   m_configObjects: {}
