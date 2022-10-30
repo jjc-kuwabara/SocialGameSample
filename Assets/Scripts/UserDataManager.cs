@@ -58,6 +58,13 @@ public class UserDataManager : SingletonMonoBehaviour<UserDataManager>
         StartCoroutine(UrlAccess(url, ()=>CallUserData_LobbySystem(userId)));
     }
 
+    public void CallHasCharaFlagReset(int userId){
+        string url = "http://35.79.36.5/PHPFolder/Jugyo/ResetHasCharaFlag.php?userId=" + userId;
+
+        StartCoroutine(UrlAccess(url));
+
+    }
+
     // ユーザデータを取得してきて、メンバ変数に格納する.
     IEnumerator GetUserData(string url, UnityAction callbackFunc = null)
     {
